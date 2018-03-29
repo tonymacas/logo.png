@@ -17,19 +17,20 @@ nav {
   transition: .5s;
 }
 
-nav .logo {
+
+nav #logo {
   float: left;
   height: 80px;
   transition: .5s;
 }
-
-.logo {
-  font-size: 40px;
+#logo {
+  font-family: "Helvetica" sans-serif;
+  font-size: 30px;
+  padding-top: 25px;
+  padding-right: 200px;
   font-weight: bold;
-  padding: 10px;
-  margin-left: 10px;
+  color: #3388ec;
 }
-
 nav ul {
   float: right;
   margin: 0;
@@ -71,6 +72,7 @@ ul {
   transition: all 750ms ease;
   left:0;
 }
+
 #container1 {
   padding: 0 50px 0 50px;
 }
