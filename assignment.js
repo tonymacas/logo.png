@@ -1,20 +1,17 @@
-let sections = document.getElementsByTagName("section")
-let firstSection = sections[0];
-let secondSection = sections[1];
-let thirdSection = sections[2]
+var slideIndex = 1;
+showDivs(slideIndex);
 
-//run this code on window scroll
-window.addEventListener("scroll", event => {
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
 
-  if(window.scrollY > 50) {
-    firstSection.classlist.add("fadeOut");
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
   }
-
-  if(sections[1].scrollY > 100) {
-    secondSection.classList.add("fadeOut");
-  }
-
-  if(sections[2].scrollY > 150) {
-    thirdSection.classList.add("fadeOut");
- }
-})
+  x[slideIndex-1].style.display = "block";
+}

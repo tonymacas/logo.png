@@ -11,35 +11,40 @@
 <body>
   <nav>
     <ul>
-      <div id="logo">
-        <img src="munder difflin.png" width=100% height=100%>
-      </div>
       <li><a href="#" class="active">Home</a></li>
       <li><a href="#">About</a></li>
-      <li><a href="#">Service</a></li>
+      <li><a href="#">Products</a></li>
       <li><a href="#">Community</a></li>
-      <li><a href="#">Contact</a></li>
     </ul>
   </nav>
 
-  <section>
-    <span><img src="book.jpg" width=100% height=100%></span>
-    <h1 class="springy-text">Who we are?</h1>
+  <section id="container1">
+    <span><img src="images/book1.jpg" width=100% height=100%></span>
+    <h1>About Us</h1>
     <p>We are one of the world’s leading producers of fiber-based packaging, pulp and paper, with 52,000 employees operating in 24 countries. We create: Packaging products that protect and promote goods, enable worldwide commerce and keep consumers safe.
       Pulp for diapers, tissue and other personal hygiene products that promote health and wellness. Papers that facilitate education and communication We are committed to strengthening our people and the communities where we live and work using all resources
       responsibly and efficiently, and ensuring our businesses are safe, successful and sustainable for generations to come.</p>
   </section>
 
-  <section>
-    <span><img src="books.jpg" width=100% height=100%></span>
-    <h1 class="springy-text">Products</h1>
-    <p>Munder Difflin provides a broad offering of paper products to meet your every need. From copy paper and blank envelopes to printed promotionals and release liners, we have the products that you and your customers need for most paper applications.
-Our team is always innovating to develop the best paper for your needs, including the latest Inkjet and Digital printing technology.</p>
-  </section>
+  <div class="slider-products">
+  <img class="mySlides" src="images/tissue2.jpg" width=100% height=100%>
+  <img class="mySlides" src="images/book2.jpg" width=100% height=100%>
+  <img class="mySlides" src="images/book3.jpg" width=100% height=100%>
+  <img class="mySlides" src="images/tissue1.jpg" width=100% height=100%>
+<div id="button">
+  <button class="button-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="button-right" onclick="plusDivs(1)">&#10095;</button>
+<h1>Products</h1>
 
-  <section>
-    <span><img src="pexels-photo.jpg" width=100% height=100%></span>
-    <h1 class="springy-text">Sustaining Forests</h1>
+</div>
+</div>
+
+
+  <section id="container3">
+    <span><img src="images/forest1.jpg" width=100% height=100%></span>
+  </section>
+  <section class="forest">
+    <h1>Sustaining Forests</h1>
     <p>Our entire business depends upon the sustainability of forests. We will continue to lead the world in responsible forest stewardship to ensure healthy and productive forest ecosystems for generations to come. International Paper is committed to making
       quality products and ensuring responsible stewardship of the forests that supply our wood. We have a Global Responsible Fiber Procurement Policy that states we will not knowingly accept fiber from illegally logged forests or from forests where high
       conservation values are threatened by management activities.</p>
@@ -48,7 +53,16 @@ Our team is always innovating to develop the best paper for your needs, includin
       support the U.S. Lacey Act, and the EU Timber Regulation, which are important laws that help combat illegal logging and prohibit trafficking of illegally harvested products while protecting the competitiveness of legally harvested trees. International
       Paper has worked to oppose changes that would weaken the U.S. law.</p>
   </section>
-<script type="text.javascript" src="assignment.js"></script>
+
+  <script src="assignment.js"></script>
 </body>
+
+  <footer>
+    <a id="contactUs">Contact Us</a>
+    <a id="twitter">Twitter</a>
+    <a id="instagram">Instagram</a>
+    <a id="facebook">Facebook</a>
+  </footer>
+
 
 </html>
