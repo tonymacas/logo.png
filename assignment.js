@@ -24,3 +24,6 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";
 }
+
+//got from https://www.w3schools.com/w3css/w3css_slideshow.asp
+//thank you for it.
